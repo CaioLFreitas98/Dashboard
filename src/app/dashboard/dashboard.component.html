@@ -1,0 +1,28 @@
+<body >
+  <div>
+    Escola Jao da Alagoinha 
+  </div>  
+  <div class="grid-container">
+    <h1 class="mat-h1"></h1>
+    <mat-grid-list cols="2" rowHeight="350px">
+      <mat-grid-tile>
+        <div>
+          <apx-chart [series]="futsalchartOptions.series" [chart]="futsalchartOptions.chart"
+            [xaxis]="futsalchartOptions.xaxis" [title]="futsalchartOptions.title"></apx-chart>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div>
+          <apx-chart [series]="voleichartOptions.series" [chart]="voleichartOptions.chart"
+            [xaxis]="voleichartOptions.xaxis" [title]="voleichartOptions.title"></apx-chart>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <div class="basquete">
+          <apx-chart [series]="basquetechartOptions.series" [chart]="basquetechartOptions.chart"
+            [xaxis]="basquetechartOptions.xaxis" [title]="basquetechartOptions.title"></apx-chart>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</body>
